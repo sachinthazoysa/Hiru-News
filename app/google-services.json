@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "870722247810",
+    "firebase_url": "https://hirunews-a506e.firebaseio.com",
+    "project_id": "hirunews-a506e",
+    "storage_bucket": "hirunews-a506e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:870722247810:android:36ca4c929235f89e64289b",
+        "android_client_info": {
+          "package_name": "com.example.hirunews"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "870722247810-ucq1p0c6vvp2f1a9flo981amoma34pru.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hirunews",
+            "certificate_hash": "b3769f39849f6f28fe2e9db1eedd23423f7959b3"
+          }
+        },
+        {
+          "client_id": "870722247810-hctp7tonrogn3vroqsr2q87fh4vleph7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmwYmIKu5-n8dTWn4272y4G-zSxSVqQwE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "870722247810-hctp7tonrogn3vroqsr2q87fh4vleph7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
