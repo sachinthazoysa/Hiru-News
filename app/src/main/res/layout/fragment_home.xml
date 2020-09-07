@@ -6,14 +6,183 @@
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeFragment"
     android:orientation="horizontal"
-    android:background="@color/colorAccent"
+    android:background="@android:color/white"
+    android:layout_marginTop="25dp"
     >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="This is Home Page"
-        android:textColor="@drawable/common_google_signin_btn_text_light" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:id="@+id/hotnews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hot News"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"/>
+
+            <LinearLayout
+                android:id="@+id/hotnewslinear"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/hotnews"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/hotnewsimage"
+                            >
+                        </ImageView>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/hotnewsimage"
+                            >
+                        </ImageView>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/hotnewsimage"
+                            android:layout_marginRight="20dp">
+                        </ImageView>
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <TextView
+                android:layout_below="@+id/hotnewslinear"
+                android:layout_marginTop="20dp"
+                android:id="@+id/recommendation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recommendation"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"/>
+
+            <ImageView
+                android:id="@+id/businessimage"
+                android:layout_marginTop="10dp"
+                android:layout_width="280dp"
+                android:layout_height="120dp"
+                android:src="@drawable/business"
+                android:layout_below="@+id/recommendation"
+             />
+            <ImageView
+                android:id="@+id/sportsimage"
+                android:layout_marginTop="10dp"
+                android:layout_width="280dp"
+                android:layout_height="120dp"
+                android:src="@drawable/sports"
+                android:layout_below="@+id/businessimage"
+                >
+            </ImageView>
+
+            <TextView
+                android:layout_below="@+id/sportsimage"
+                android:layout_marginTop="20dp"
+                android:id="@+id/currencyhead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Currency"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"/>
+
+            <LinearLayout
+                android:id="@+id/currencylayout"
+                android:layout_below="@id/currencyhead"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/currencyimage"
+                            android:layout_marginRight="5dp"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:src="@drawable/currencyimage"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:src="@drawable/currencyimage"/>
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:src="@drawable/currencyimage"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:src="@drawable/currencyimage"/>
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <TextView
+                android:layout_below="@+id/currencylayout"
+                android:layout_marginTop="10dp"
+                android:id="@+id/todaynewshead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Today News"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/todaynewshead"
+                android:id="@+id/img1"
+                android:src="@drawable/covidnews"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img1"
+                android:id="@+id/img2"
+                android:src="@drawable/covidnews"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img2"
+                android:id="@+id/img3"
+                android:src="@drawable/covidnews"/>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
 
 </RelativeLayout>
