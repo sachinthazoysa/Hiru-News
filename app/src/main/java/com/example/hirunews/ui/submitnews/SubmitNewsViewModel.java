@@ -1,16 +1,16 @@
-package com.example.hirunews.ui.gallery;
+package com.example.hirunews.ui.submitnews;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class GalleryViewModel extends ViewModel {
+public class SubmitNewsViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public GalleryViewModel() {
+    public SubmitNewsViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is gallery fragment");
+        mText.setValue("This is submit news fragment");
     }
 
     public LiveData<String> getText() {

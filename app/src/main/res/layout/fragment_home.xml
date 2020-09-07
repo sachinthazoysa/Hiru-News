@@ -6,13 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeFragment"
     android:orientation="horizontal"
+    android:background="@color/colorAccent"
     >
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Home Page"
-        android:textColor="#ffff"
         android:layout_centerInParent="true"
-        />
+        android:text="This is Home Page"
+        android:textColor="@drawable/common_google_signin_btn_text_light" />
 
 </RelativeLayout>
