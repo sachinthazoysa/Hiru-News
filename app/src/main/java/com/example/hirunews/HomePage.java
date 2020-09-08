@@ -58,6 +58,7 @@ public class HomePage extends AppCompatActivity implements NavigationView.OnNavi
 //        NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
 //        NavigationUI.setupWithNavController(navigationView, navController);
 
+//
 
     }
 
@@ -128,27 +129,7 @@ public class HomePage extends AppCompatActivity implements NavigationView.OnNavi
                 }
             };
 
-//
-//        public NavigationView.OnNavigationItemSelectedListener sideNavListner =
-//                new NavigationView.OnNavigationItemSelectedListener() {
-//                    @Override
-//                    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-//                        Fragment selectedFragment = null;
-//
-//                        switch (item.getItemId()) {
-//                            case R.id.nav_home:
-//                                selectedFragment = new HomeFragment();
-//                                break;
-//                            case R.id.nav_submit:
-//                                selectedFragment = new SubmitNewsFragment();
-//                                break;
-//                            case R.id.nav_save:
-//                                selectedFragment = new SavedNewsFragment();
-//                                break;
-//                        }
-//                        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, selectedFragment).commit();
-//                        return true;
-//                    }
-//                };
+
+
 
 }
