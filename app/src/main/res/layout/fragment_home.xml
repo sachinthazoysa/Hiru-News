@@ -43,13 +43,13 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="horizontal">
+
                         <ImageView
                             android:id="@+id/newsImage"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/hotnewsimage"
-                            >
-                        </ImageView>
+                            android:src="@drawable/hotnewsimage"></ImageView>
+
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -164,19 +164,19 @@
                 android:textSize="20sp"/>
 
             <ImageView
-                android:layout_width="wrap_content"
+                android:layout_width="380dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/todaynewshead"
                 android:id="@+id/img1"
                 android:src="@drawable/covidnews"/>
             <ImageView
-                android:layout_width="wrap_content"
+                android:layout_width="380dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/img1"
                 android:id="@+id/img2"
                 android:src="@drawable/covidnews"/>
             <ImageView
-                android:layout_width="wrap_content"
+                android:layout_width="380dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/img2"
                 android:id="@+id/img3"
