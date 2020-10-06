@@ -23,13 +23,13 @@ public class SavedNewsFragment extends Fragment {
         savedNewsViewModel =
                 ViewModelProviders.of(this).get(SavedNewsViewModel.class);
         View root = inflater.inflate(R.layout.fragment_saved_news, container, false);
-        final TextView textView = root.findViewById(R.id.text_slideshow);
-        savedNewsViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
+//        final TextView textView = root.findViewById(R.id.text_slideshow);
+//        savedNewsViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+//            @Override
+//            public void onChanged(@Nullable String s) {
+//                textView.setText(s);
+//            }
+//        });
         return root;
     }
 }

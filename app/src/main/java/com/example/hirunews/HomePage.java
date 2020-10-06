@@ -4,6 +4,13 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.Menu;
 
+import com.example.hirunews.ui.categories.BreakingNewsFragment;
+import com.example.hirunews.ui.categories.ForeignFragment;
+import com.example.hirunews.ui.categories.HotNewsFragment;
+import com.example.hirunews.ui.categories.LocalFragment;
+import com.example.hirunews.ui.categories.MyNewsFragment;
+import com.example.hirunews.ui.categories.SportsFragment;
+import com.example.hirunews.ui.categories.VideoNewsFragment;
 import com.example.hirunews.ui.submitnews.SubmitNewsFragment;
 import com.example.hirunews.ui.home.HomeFragment;
 import com.example.hirunews.ui.savednews.SavedNewsFragment;
@@ -50,9 +57,11 @@ public class HomePage extends AppCompatActivity implements NavigationView.OnNavi
         navigationView.setNavigationItemSelectedListener(this);
 
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_submit, R.id.nav_save)
+                R.id.nav_home, R.id.nav_local)
                 .setDrawerLayout(drawer)
                 .build();
+
+//        R.id.nav_home, R.id.nav_submit, R.id.nav_save)
 
 //        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
 //        NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
@@ -68,6 +77,27 @@ public class HomePage extends AppCompatActivity implements NavigationView.OnNavi
         Fragment selectedFragment  = null;
 
         switch (item.getItemId()){
+            case R.id.nav_hot:
+                selectedFragment = new HotNewsFragment();
+                break;
+            case R.id.nav_local:
+                selectedFragment = new LocalFragment();
+                break;
+            case R.id.nav_foreign:
+                selectedFragment = new ForeignFragment();
+                break;
+            case R.id.nav_sports:
+                selectedFragment = new SportsFragment();
+                break;
+            case R.id.nav_breaking:
+                selectedFragment = new BreakingNewsFragment();
+                break;
+            case R.id.nav_video_news:
+                selectedFragment = new VideoNewsFragment();
+                break;
+            case R.id.nav_my_news:
+                selectedFragment = new MyNewsFragment();
+                break;
             case R.id.nav_home:
                 selectedFragment = new HomeFragment();
                 break;
@@ -118,7 +148,7 @@ public class HomePage extends AppCompatActivity implements NavigationView.OnNavi
                             selectedFragment = new HomeFragment();
                             break;
                         case R.id.nav_submit:
-                            selectedFragment = new SubmitNewsFragment();
+                            selectedFragment = new MyNewsFragment();
                             break;
                         case R.id.nav_save:
                             selectedFragment = new SavedNewsFragment();
