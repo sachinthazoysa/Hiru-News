@@ -96,7 +96,9 @@
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:background="@color/colorPrimaryDark"
-                        android:layout_margin="10dp" />
+                        android:layout_margin="10dp"
+                        android:src="@drawable/accident1"
+                        />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -106,9 +108,9 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="5 accidents around Sri Lanka in past 24 Hours"
                             android:layout_margin="10dp"
-                            android:textColor="#000000"/>
+                            android:text="3 accidents near the Wariyapola Town in past 24 Hours"
+                            android:textColor="#000000" />
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -145,8 +147,9 @@
                     <ImageView
                         android:layout_width="80dp"
                         android:layout_height="80dp"
+                        android:layout_margin="10dp"
                         android:background="@color/colorPrimaryDark"
-                        android:layout_margin="10dp"/>
+                        android:src="@drawable/bookfair1" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -156,7 +159,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="5 accidents around Sri Lanka in past 24 Hours"
+                            android:text="Starting date of the CODE_4 Book Fair"
                             android:layout_margin="10dp"
                             android:textColor="#000000"/>
 
@@ -183,7 +186,7 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/my_news_5"
+                    android:id="@+id/my_news_3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
@@ -194,7 +197,9 @@
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:background="@color/colorPrimaryDark"
-                        android:layout_margin="10dp"/>
+                        android:layout_margin="10dp"
+                        android:src="@drawable/opening1"
+                        />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -204,7 +209,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="5 accidents around Sri Lanka in past 24 Hours"
+                            android:text="New opening ceremony of the Code_4 software Company"
                             android:layout_margin="10dp"
                             android:textColor="#000000"/>
 

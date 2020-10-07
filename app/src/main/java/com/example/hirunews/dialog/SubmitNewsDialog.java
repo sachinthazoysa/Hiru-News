@@ -44,28 +44,12 @@ public class SubmitNewsDialog extends AppCompatDialogFragment {
     @NonNull
     @Override
     public Dialog onCreateDialog(@Nullable Bundle savedInstanceState) {
-//        return super.onCreateDialog(savedInstanceState);
 
-//        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-//        LayoutInflater inflater = getActivity().getLayoutInflater();
-//        View view = inflater.inflate(R.layout.submit_news_form, null);
 
         final AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         LayoutInflater inflater = getActivity().getLayoutInflater();
         final View view = inflater.inflate(R.layout.submit_news_form, null);
 
-
-
-//        submitBtn = view.findViewById(R.id.submitBtn);
-//        submitBtn.setOnClickListener();
-//        submitBtn.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Toast.makeText(getActivity(), "Button Clicked", Toast.LENGTH_SHORT).show();
-//                builder.dismiss();
-//
-//            }
-//        });
 
         captured_image_1 = view.findViewById(R.id.captured_image_1);
         captured_image_1.setOnClickListener(new View.OnClickListener() {

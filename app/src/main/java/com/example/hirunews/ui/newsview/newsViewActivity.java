@@ -32,28 +32,50 @@ public class newsViewActivity extends AppCompatActivity {
 
         String imageName=getIntent().getExtras().get("imageName").toString();
         String titlex= getIntent().getExtras().get("title").toString();
+        String page= getIntent().getExtras().get("page").toString();
 
-        if(imageName.equals("brandix")){
-            newsImage.setImageResource(R.drawable.brandix);
-            title.setText(titlex);
-        }
+        if (page.equals( "myNews" )){
+
+            if(imageName.equals("accident")){
+                newsImage.setImageResource(R.drawable.accident1);
+                title.setText(titlex);
+            }
 //
-        if(imageName.equals("brandix")){
-            newsImage.setImageResource(R.drawable.brandix);
-            title.setText(titlex);
+            if(imageName.equals("bookfair")){
+                newsImage.setImageResource(R.drawable.bookfair1);
+                title.setText(titlex);
+            }
+            if(imageName.equals("opening")){
+                newsImage.setImageResource(R.drawable.opening1);
+                title.setText(titlex);
+            }
+
+        }else{ //put here condition that you needs...!
+
+            if(imageName.equals("brandix")){
+                newsImage.setImageResource(R.drawable.brandix);
+                title.setText(titlex);
+            }
+//
+            if(imageName.equals("brandix")){
+                newsImage.setImageResource(R.drawable.brandix);
+                title.setText(titlex);
+            }
+            if(imageName.equals("stds")){
+                newsImage.setImageResource(R.drawable.stds);
+                title.setText(titlex);
+            }
+            if(imageName.equals("police")){
+                newsImage.setImageResource(R.drawable.police);
+                title.setText(titlex);
+            }
+            if(imageName.equals("sha")){
+                newsImage.setImageResource(R.drawable.sha);
+                title.setText(titlex);
+            }
         }
-        if(imageName.equals("stds")){
-            newsImage.setImageResource(R.drawable.stds);
-            title.setText(titlex);
-        }
-        if(imageName.equals("police")){
-            newsImage.setImageResource(R.drawable.police);
-            title.setText(titlex);
-        }
-        if(imageName.equals("sha")){
-            newsImage.setImageResource(R.drawable.sha);
-            title.setText(titlex);
-        }
+
+
 
 
         playButton.setOnClickListener(new View.OnClickListener() {
