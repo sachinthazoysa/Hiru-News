@@ -1,5 +1,6 @@
 package com.example.hirunews.ui.categories;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,15 +13,18 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.example.hirunews.R;
+import com.example.hirunews.ui.newsview.newsViewActivity;
 
 public class BreakingNewsFragment extends Fragment {
 
-    LinearLayout breaking_news_1, breaking_news_2, breaking_news_3, breaking_news_4, breaking_news_5;
+    LinearLayout breaking_news_1, breaking_news_2, breaking_news_3, breaking_news_4;
+    Intent intent;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 //        return super.onCreateView(inflater, container, savedInstanceState);
+        intent = new Intent(getActivity(), newsViewActivity.class);
 
         View root = inflater.inflate(R.layout.fragment_breaking_news, container, false);
 
@@ -29,6 +33,10 @@ public class BreakingNewsFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getActivity(), "Breaking News 1", Toast.LENGTH_SHORT).show();
+                intent.putExtra("page", "breakingNews" );
+                intent.putExtra("imageName", "accident" );
+                intent.putExtra("title","5 accidents around Sri Lanka in past 24 Hours");
+                startActivity(intent);
             }
         });
 
@@ -37,6 +45,10 @@ public class BreakingNewsFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getActivity(), "Breaking News 2", Toast.LENGTH_SHORT).show();
+                intent.putExtra("page", "breakingNews" );
+                intent.putExtra("imageName", "opposition" );
+                intent.putExtra("title","Opposition seeks two-day debate on COVID-19");
+                startActivity(intent);
             }
         });
 
@@ -45,6 +57,10 @@ public class BreakingNewsFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getActivity(), "Breaking News 3", Toast.LENGTH_SHORT).show();
+                intent.putExtra("page", "breakingNews" );
+                intent.putExtra("imageName", "brandix" );
+                intent.putExtra("title","Brandix says no party from India or any other country had access to Minuwangoda facility");
+                startActivity(intent);
             }
         });
 
@@ -53,16 +69,13 @@ public class BreakingNewsFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getActivity(), "Breaking News 4", Toast.LENGTH_SHORT).show();
+                intent.putExtra("page", "breakingNews" );
+                intent.putExtra("imageName", "police" );
+                intent.putExtra("title","UPDATE: Another Quarantine order issued for all Minuwangoda Brandix workers");
+                startActivity(intent);
             }
         });
 
-        breaking_news_5 = root.findViewById(R.id.breaking_news_5);
-        breaking_news_5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(getActivity(), "Breaking News 5", Toast.LENGTH_SHORT).show();
-            }
-        });
 
 
         return root;
