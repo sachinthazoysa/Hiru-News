@@ -10,8 +10,10 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 
 import com.example.hirunews.R;
+import com.example.hirunews.dialog.SubmitNewsDialog;
 
 public class MyNewsFragment extends Fragment {
 
@@ -29,8 +31,16 @@ public class MyNewsFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getActivity(), "Submit new Button Clicked", Toast.LENGTH_SHORT).show();
+                openDialog();
+
             }
         });
         return root;
+    }
+
+    public void openDialog(){
+        SubmitNewsDialog submitNewsDialog = new SubmitNewsDialog();
+        FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+        submitNewsDialog.show(fragmentManager, "example");
     }
 }
