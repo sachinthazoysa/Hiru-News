@@ -1,5 +1,6 @@
 package com.example.hirunews.ui.categories;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,15 +13,19 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.example.hirunews.R;
+import com.example.hirunews.ui.newsview.newsViewActivity;
 
 public class ForeignFragment extends Fragment {
 
-    LinearLayout foreign_news_1, foreign_news_2, foreign_news_3, foreign_news_4,foreign_news_5;
+    LinearLayout foreign_news_1, foreign_news_2, foreign_news_3, foreign_news_4;
+    Intent intent;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 //        return super.onCreateView(inflater, container, savedInstanceState);
+
+        intent = new Intent(getActivity(), newsViewActivity.class);
 
         View root = inflater.inflate(R.layout.fragment_foreign, container, false);
 
@@ -29,6 +34,10 @@ public class ForeignFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getActivity(), "Foreign News 1", Toast.LENGTH_SHORT).show();
+                intent.putExtra("page", "foreignNews" );
+                intent.putExtra("imageName", "trumpt" );
+                intent.putExtra("title","Covid: Trump free of symptoms for 24 hours, says doctor");
+                startActivity(intent);
             }
         });
 
@@ -37,6 +46,10 @@ public class ForeignFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getActivity(), "Foreign News 2", Toast.LENGTH_SHORT).show();
+                intent.putExtra("page", "foreignNews" );
+                intent.putExtra("imageName", "Greece" );
+                intent.putExtra("title","Greece Golden Dawn: Neo-Nazi leaders guilty of running crime gang");
+                startActivity(intent);
             }
         });
 
@@ -45,6 +58,10 @@ public class ForeignFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getActivity(), "Foreign News 3", Toast.LENGTH_SHORT).show();
+                intent.putExtra("page", "foreignNews" );
+                intent.putExtra("imageName", "fire" );
+                intent.putExtra("title","September was world's 'hottest on record'");
+                startActivity(intent);
             }
         });
 
@@ -53,16 +70,14 @@ public class ForeignFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getActivity(), "Foreign News 4", Toast.LENGTH_SHORT).show();
+                intent.putExtra("page", "foreignNews" );
+                intent.putExtra("imageName", "modhi" );
+                intent.putExtra("title","Kamala, Kashmir and Modi's friend all on ballot in US election");
+                startActivity(intent);
             }
         });
 
-        foreign_news_5 = root.findViewById(R.id.foreign_news_5);
-        foreign_news_5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(getActivity(), "Foreign News 5", Toast.LENGTH_SHORT).show();
-            }
-        });
+
 
         return root;
     }

@@ -34,7 +34,7 @@ public class newsViewActivity extends AppCompatActivity {
         String titlex= getIntent().getExtras().get("title").toString();
         String page= getIntent().getExtras().get("page").toString();
 
-        if (page.equals( "myNews" )){
+        if (page.equals( "myNews" )){ // for my news
 
             if(imageName.equals("accident")){
                 newsImage.setImageResource(R.drawable.accident1);
@@ -49,7 +49,7 @@ public class newsViewActivity extends AppCompatActivity {
                 title.setText(titlex);
             }
 
-        }else if (page.equals( "breakingNews" )){
+        }else if (page.equals( "breakingNews" )){ //for breaking news
 
             if(imageName.equals("accident")){
                 newsImage.setImageResource(R.drawable.accident1);
@@ -68,7 +68,27 @@ public class newsViewActivity extends AppCompatActivity {
                 title.setText(titlex);
             }
 
-        }else{ //put here condition that you needs...!
+        }else if (page.equals( "foreignNews" )){ //for Foreign news
+
+            if(imageName.equals("trumpt")){
+                newsImage.setImageResource(R.drawable.trumpt);
+                title.setText(titlex);
+
+            }else if(imageName.equals("Greece")){
+                newsImage.setImageResource(R.drawable.gree);
+                title.setText(titlex);
+
+            }else if(imageName.equals("fire")){
+                newsImage.setImageResource(R.drawable.fire);
+                title.setText(titlex);
+
+            }else if(imageName.equals("modhi")){
+                newsImage.setImageResource(R.drawable.modhi);
+                title.setText(titlex);
+            }
+
+
+        }else{ //for zoysa you have to add your condion here
 
             if(imageName.equals("brandix")){
                 newsImage.setImageResource(R.drawable.brandix);
