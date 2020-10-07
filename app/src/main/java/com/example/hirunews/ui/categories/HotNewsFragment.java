@@ -1,10 +1,14 @@
 package com.example.hirunews.ui.categories;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -12,15 +16,18 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.example.hirunews.R;
+import com.example.hirunews.ui.newsview.newsViewActivity;
 
 public class HotNewsFragment extends Fragment {
-
-    LinearLayout hot_news_1, hot_news_2, hot_news_3, hot_news_4, hot_news_5;
+    Animation BottomAnim;
+        LinearLayout hot_news_1, hot_news_2, hot_news_3, hot_news_4, hot_news_5;
+        Intent intent;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-//        return super.onCreateView(inflater, container, savedInstanceState);
+        intent = new Intent(getActivity(), newsViewActivity.class);
+
 
         View root = inflater.inflate(R.layout.fragment_hot_news, container, false);
 
@@ -28,7 +35,9 @@ public class HotNewsFragment extends Fragment {
         hot_news_1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getActivity(), "Hot News 1", Toast.LENGTH_SHORT).show();
+                intent.putExtra("imageName", "brandix" );
+                intent.putExtra("title","COVID-19: Minuwangoda cluster tops 1,000 mark with 190 more cases");
+                startActivity(intent);
             }
         });
 
@@ -37,6 +46,9 @@ public class HotNewsFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getActivity(), "Hot News 2", Toast.LENGTH_SHORT).show();
+                intent.putExtra("imageName", "stds" );
+                intent.putExtra("title","Grade 05 Scholarship and A/L exams NOT postponed");
+                startActivity(intent);
             }
         });
 
@@ -45,6 +57,10 @@ public class HotNewsFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getActivity(), "Hot News 3", Toast.LENGTH_SHORT).show();
+                intent.putExtra("imageName", "police" );
+                intent.putExtra("title","Quarantine curfew in Seeduwa police area");
+                startActivity(intent);
+
             }
         });
 
@@ -53,16 +69,13 @@ public class HotNewsFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getActivity(), "Hot News 4", Toast.LENGTH_SHORT).show();
+                intent.putExtra("imageName", "sha" );
+                intent.putExtra("title","Army Chief explains reason behind police curfews");
+                startActivity(intent);
             }
         });
 
-        hot_news_5 = root.findViewById(R.id.hot_news_5);
-        hot_news_5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(getActivity(), "Hot News 5", Toast.LENGTH_SHORT).show();
-            }
-        });
+
 
         return root;
     }
