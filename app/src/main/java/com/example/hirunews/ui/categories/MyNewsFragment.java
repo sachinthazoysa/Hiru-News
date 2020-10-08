@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -24,6 +26,7 @@ public class MyNewsFragment extends Fragment {
 //    TextView submit_news_btn;
     LinearLayout submit_news_btn;
     Intent intent;
+    TextView title;
 
 
     @Nullable
@@ -32,8 +35,12 @@ public class MyNewsFragment extends Fragment {
 //        return super.onCreateView(inflater, container, savedInstanceState);
 
         intent = new Intent(getActivity(), newsViewActivity.class);
+        Animation animation2 = AnimationUtils.loadAnimation(getActivity().getApplicationContext(), R.anim.move_left_animation);
+        Animation animation = AnimationUtils.loadAnimation(getActivity().getApplicationContext(), R.anim.top_animation);
 
         View root = inflater.inflate(R.layout.fragment_my_news, container, false);
+        title =root.findViewById(R.id.my_news_title);
+        title.startAnimation(animation);
 
         submit_news_btn = root.findViewById(R.id.submit_news_btn);
         submit_news_btn.setOnClickListener(new View.OnClickListener() {
