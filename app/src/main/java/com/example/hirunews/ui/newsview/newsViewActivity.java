@@ -111,6 +111,29 @@ public class newsViewActivity extends AppCompatActivity {
                 newsImage.setImageResource(R.drawable.sha);
                 title.setText(titlex);
             }
+        }else if (page.equals( "localNews" )){
+
+            if(imageName.equals("quarantine")){
+                newsImage.setImageResource(R.drawable.local1);
+                title.setText(titlex);
+            }
+//
+            if(imageName.equals("train")){
+                newsImage.setImageResource(R.drawable.local2);
+                title.setText(titlex);
+            }
+            if(imageName.equals("posting")){
+                newsImage.setImageResource(R.drawable.local3);
+                title.setText(titlex);
+            }
+            if(imageName.equals("race")){
+                newsImage.setImageResource(R.drawable.local4);
+                title.setText(titlex);
+            }
+            if(imageName.equals("purchase")){
+                newsImage.setImageResource(R.drawable.local5);
+                title.setText(titlex);
+            }
         }
 
 
