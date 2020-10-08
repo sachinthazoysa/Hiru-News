@@ -39,7 +39,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:fontFamily="@font/bangers"
+                android:fontFamily="@font/fugaz_one"
                 android:text="Breaking \n     News"
                 android:textSize="50sp"
                 android:layout_gravity="center"
