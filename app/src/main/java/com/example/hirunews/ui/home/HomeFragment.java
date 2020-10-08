@@ -8,7 +8,9 @@ import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -24,7 +26,9 @@ public class HomeFragment extends Fragment {
 
     ImageView imageView,imageView2,imageView3,imageView4, businessImg, sportsImg,cur1,cur2,cur3,cur4,cur5;
     private HomeViewModel homeViewModel;
-    Intent intent;
+    LinearLayout today_news_1, today_news_2, today_news_3, today_news_4;
+    Intent intent1;
+    TextView title;
     TextView hotNews;
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -32,7 +36,7 @@ public class HomeFragment extends Fragment {
         Animation animation = AnimationUtils.loadAnimation(getActivity().getApplicationContext(), R.anim.top_animation_2);
         Animation repeatanimation = AnimationUtils.loadAnimation(getActivity().getApplicationContext(), R.anim.repeat_move_animation);
 
-        intent = new Intent(getActivity(), newsViewActivity.class);
+        intent1 = new Intent(getActivity(), newsViewActivity.class);
 
         homeViewModel =
                 ViewModelProviders.of(this).get(HomeViewModel.class);
@@ -56,6 +60,57 @@ public class HomeFragment extends Fragment {
         cur4.startAnimation(repeatanimation);
         cur5.startAnimation(repeatanimation);
 
+        today_news_1 = root.findViewById( R.id.today_news_1 );
+        today_news_2 = root.findViewById( R.id.today_news_2 );
+        today_news_3 = root.findViewById( R.id.today_news_3 );
+        today_news_4 = root.findViewById( R.id.today_news_4 );
+
+
+        today_news_1.setOnClickListener( new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getActivity(), "Today News 1", Toast.LENGTH_SHORT).show();
+                intent1.putExtra("page", "breakingNews" );
+                intent1.putExtra("imageName", "accident" );
+                intent1.putExtra("title","5 accidents around Sri Lanka in past 24 Hours");
+                startActivity(intent1);
+            }
+        } );
+
+        today_news_2.setOnClickListener( new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getActivity(), "Today News 2", Toast.LENGTH_SHORT).show();
+                intent1.putExtra("page", "breakingNews" );
+                intent1.putExtra("imageName", "opposition" );
+                intent1.putExtra("title","Opposition seeks two-day debate on COVID-19");
+                startActivity(intent1);
+            }
+        } );
+
+
+        today_news_3.setOnClickListener( new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getActivity(), "Today News 3", Toast.LENGTH_SHORT).show();
+                intent1.putExtra("page", "breakingNews" );
+                intent1.putExtra("imageName", "brandix" );
+                intent1.putExtra("title","Brandix says no party from India or any other country had access to Minuwangoda facility");
+                startActivity(intent1);
+            }
+        } );
+
+
+        today_news_4.setOnClickListener( new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getActivity(), "Today News 4", Toast.LENGTH_SHORT).show();
+                intent1.putExtra("page", "breakingNews" );
+                intent1.putExtra("imageName", "police" );
+                intent1.putExtra("title","UPDATE: Another Quarantine order issued for all Minuwangoda Brandix workers");
+                startActivity(intent1);
+            }
+        } );
 
         imageView.setAnimation(animation2);
         imageView.animate();
