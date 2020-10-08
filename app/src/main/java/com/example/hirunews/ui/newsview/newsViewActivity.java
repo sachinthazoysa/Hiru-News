@@ -134,9 +134,30 @@ public class newsViewActivity extends AppCompatActivity {
                 newsImage.setImageResource(R.drawable.local5);
                 title.setText(titlex);
             }
+        }else if (page.equals( "sportNews" )){
+
+            if(imageName.equals("Premier")){
+                newsImage.setImageResource(R.drawable.lpl);
+                title.setText(titlex);
+            }
+//
+            if(imageName.equals("tour")){
+                newsImage.setImageResource(R.drawable.ban);
+                title.setText(titlex);
+            }
+            if(imageName.equals("record")){
+                newsImage.setImageResource(R.drawable.rcb);
+                title.setText(titlex);
+            }
+            if(imageName.equals("employees")){
+                newsImage.setImageResource(R.drawable.icc);
+                title.setText(titlex);
+            }
+            if(imageName.equals("sprinter")){
+                newsImage.setImageResource(R.drawable.yup);
+                title.setText(titlex);
+            }
         }
-
-
 
 
         playButton.setOnClickListener(new View.OnClickListener() {
