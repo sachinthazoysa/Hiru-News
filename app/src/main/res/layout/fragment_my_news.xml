@@ -110,7 +110,6 @@
                     <ImageView
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:background="@color/colorPrimaryDark"
                         android:layout_margin="10dp"
                         android:src="@drawable/accident1"
                         />
@@ -163,7 +162,6 @@
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:layout_margin="10dp"
-                        android:background="@color/colorPrimaryDark"
                         android:src="@drawable/bookfair1" />
 
                     <LinearLayout
@@ -211,7 +209,6 @@
                     <ImageView
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:background="@color/colorPrimaryDark"
                         android:layout_margin="10dp"
                         android:src="@drawable/opening1"
                         />
