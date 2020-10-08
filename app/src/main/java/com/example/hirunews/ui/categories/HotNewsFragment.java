@@ -1,5 +1,6 @@
 package com.example.hirunews.ui.categories;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -15,23 +16,34 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.example.hirunews.MainActivity;
 import com.example.hirunews.R;
 import com.example.hirunews.ui.newsview.newsViewActivity;
+import com.google.firebase.auth.internal.FederatedSignInActivity;
 
 public class HotNewsFragment extends Fragment {
     Animation BottomAnim;
         LinearLayout hot_news_1, hot_news_2, hot_news_3, hot_news_4, hot_news_5;
         Intent intent;
+        TextView title;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         intent = new Intent(getActivity(), newsViewActivity.class);
-
+        Animation animation = AnimationUtils.loadAnimation(getActivity().getApplicationContext(), R.anim.top_animation);
+        Animation moveLeftAnim = AnimationUtils.loadAnimation(getActivity().getApplicationContext(), R.anim.move_left_animation);
 
         View root = inflater.inflate(R.layout.fragment_hot_news, container, false);
 
+        title=root.findViewById(R.id.hot_news_title);
+        title.startAnimation(animation);
+
+
         hot_news_1 = root.findViewById(R.id.hot_news_1);
+        hot_news_1.setAnimation(moveLeftAnim);
+        hot_news_1.animate();
+        moveLeftAnim.start();
         hot_news_1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
