@@ -85,7 +85,8 @@
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:layout_margin="10dp"
-                        android:src="@drawable/accident1"/>
+                        android:src="@drawable/accident1"
+                        android:scaleType="centerCrop"/>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -135,7 +136,8 @@
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:layout_margin="10dp"
-                        android:src="@drawable/oposition"/>
+                        android:src="@drawable/oposition"
+                        android:scaleType="centerCrop"/>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -184,7 +186,8 @@
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:layout_margin="10dp"
-                        android:src="@drawable/brandix"/>
+                        android:src="@drawable/brandix"
+                        android:scaleType="centerCrop"/>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -233,7 +236,8 @@
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:layout_margin="10dp"
-                        android:src="@drawable/police1"/>
+                        android:src="@drawable/police1"
+                        android:scaleType="centerCrop"/>
 
                     <LinearLayout
                         android:layout_width="match_parent"

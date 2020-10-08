@@ -131,7 +131,8 @@
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:layout_margin="10dp"
-                        android:src="@drawable/brandix" />
+                        android:src="@drawable/brandix"
+                        android:scaleType="centerCrop"/>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -181,7 +182,8 @@
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:layout_margin="10dp"
-                        android:background="@drawable/stds" />
+                        android:background="@drawable/stds"
+                        android:scaleType="centerCrop"/>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -230,7 +232,8 @@
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:layout_margin="10dp"
-                        android:background="@mipmap/police" />
+                        android:background="@mipmap/police"
+                        android:scaleType="centerCrop"/>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -279,7 +282,8 @@
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:layout_margin="10dp"
-                        android:background="@drawable/sha" />
+                        android:background="@drawable/sha"
+                        android:scaleType="centerCrop"/>
 
                     <LinearLayout
                         android:layout_width="match_parent"

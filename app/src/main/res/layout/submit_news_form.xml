@@ -43,7 +43,8 @@
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:src="@drawable/ic_add_bigger"
-                android:layout_centerInParent="true"/>
+                android:layout_centerInParent="true"
+                android:scaleType="centerCrop"/>
 
         </RelativeLayout>
 
@@ -59,7 +60,8 @@
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:src="@drawable/ic_add_bigger"
-                android:layout_centerInParent="true"/>
+                android:layout_centerInParent="true"
+                android:scaleType="centerCrop"/>
 
         </RelativeLayout>
 
@@ -75,7 +77,8 @@
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:src="@drawable/ic_add_bigger"
-                android:layout_centerInParent="true"/>
+                android:layout_centerInParent="true"
+                android:scaleType="centerCrop"/>
 
         </RelativeLayout>
 

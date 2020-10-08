@@ -78,7 +78,8 @@
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:layout_margin="10dp"
-                        android:src="@drawable/trumpt"/>
+                        android:src="@drawable/trumpt"
+                        android:scaleType="centerCrop"/>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -127,7 +128,8 @@
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:layout_margin="10dp"
-                        android:src="@drawable/gree"/>
+                        android:src="@drawable/gree"
+                        android:scaleType="centerCrop"/>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -177,7 +179,8 @@
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:layout_margin="10dp"
-                        android:src="@drawable/fire"/>
+                        android:src="@drawable/fire"
+                        android:scaleType="centerCrop"/>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -227,7 +230,8 @@
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:layout_margin="10dp"
-                        android:src="@drawable/modhi"/>
+                        android:src="@drawable/modhi"
+                        android:scaleType="centerCrop"/>
 
                     <LinearLayout
                         android:layout_width="match_parent"

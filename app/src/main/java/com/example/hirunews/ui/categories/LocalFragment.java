@@ -91,17 +91,17 @@ public class LocalFragment extends Fragment {
             }
         });
 
-        local_news_5 = root.findViewById(R.id.local_news_5);
-        local_news_5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(getActivity(), "Local News 5", Toast.LENGTH_SHORT).show();
-                intent.putExtra("page", "localNews" );
-                intent.putExtra("imageName", "purchase" );
-                intent.putExtra("title","Permit holders can purchase new vehicles in SL using concessions in permit (Circular Attached)");
-                startActivity(intent);
-            }
-        });
+//        local_news_5 = root.findViewById(R.id.local_news_5);
+//        local_news_5.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Toast.makeText(getActivity(), "Local News 5", Toast.LENGTH_SHORT).show();
+//                intent.putExtra("page", "localNews" );
+//                intent.putExtra("imageName", "purchase" );
+//                intent.putExtra("title","Permit holders can purchase new vehicles in SL using concessions in permit (Circular Attached)");
+//                startActivity(intent);
+//            }
+//        });
         return root;
     }
 }
