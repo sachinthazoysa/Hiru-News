@@ -84,7 +84,6 @@
                     <ImageView
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:background="@color/colorPrimaryDark"
                         android:layout_margin="10dp"
                         android:src="@drawable/accident1"/>
 
@@ -135,7 +134,6 @@
                     <ImageView
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:background="@color/colorPrimaryDark"
                         android:layout_margin="10dp"
                         android:src="@drawable/oposition"/>
 
@@ -185,7 +183,6 @@
                     <ImageView
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:background="@color/colorPrimaryDark"
                         android:layout_margin="10dp"
                         android:src="@drawable/brandix"/>
 
@@ -235,7 +232,6 @@
                     <ImageView
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:background="@color/colorPrimaryDark"
                         android:layout_margin="10dp"
                         android:src="@drawable/police1"/>
 
