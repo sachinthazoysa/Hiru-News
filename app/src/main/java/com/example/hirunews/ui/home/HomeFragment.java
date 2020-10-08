@@ -24,12 +24,14 @@ import com.example.hirunews.ui.newsview.newsViewActivity;
 
 public class HomeFragment extends Fragment {
 
-    ImageView imageView,imageView2,imageView3,imageView4, businessImg, sportsImg,cur1,cur2,cur3,cur4,cur5;
+    ImageView imageView,imageView2,imageView3,imageView4,cur1,cur2,cur3,cur4,cur5;
     private HomeViewModel homeViewModel;
     LinearLayout today_news_1, today_news_2, today_news_3, today_news_4;
     Intent intent1;
     TextView title;
     TextView hotNews;
+
+    LinearLayout  businessImg, sportsImg;
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         Animation animation2 = AnimationUtils.loadAnimation(getActivity().getApplicationContext(), R.anim.move_animation);
