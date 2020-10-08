@@ -15,11 +15,15 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.example.hirunews.R;
+import com.example.hirunews.ui.categories.BreakingNewsFragment;
 import com.example.hirunews.ui.categories.HotNewsFragment;
+import com.example.hirunews.ui.categories.SportsFragment;
 import com.example.hirunews.ui.newsview.newsViewActivity;
 
 public class HomeFragment extends Fragment {
@@ -31,7 +35,7 @@ public class HomeFragment extends Fragment {
     TextView title;
     TextView hotNews;
 
-    LinearLayout  businessImg, sportsImg;
+    LinearLayout  breakingImg, sportsImg;
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         Animation animation2 = AnimationUtils.loadAnimation(getActivity().getApplicationContext(), R.anim.move_animation);
@@ -43,8 +47,34 @@ public class HomeFragment extends Fragment {
         homeViewModel =
                 ViewModelProviders.of(this).get(HomeViewModel.class);
         View root = inflater.inflate(R.layout.fragment_home, container, false);
-        businessImg = root.findViewById(R.id.businessimage);
+
+        breakingImg = root.findViewById(R.id.breakingimage);
+        breakingImg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getActivity(), "Clicked Breaking News", Toast.LENGTH_SHORT).show();
+                Fragment fragment = new BreakingNewsFragment();
+                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(((ViewGroup)getView().getParent()).getId(), fragment);
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
+            }
+        });
         sportsImg = root.findViewById(R.id.sportsimage);
+        sportsImg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getActivity(), "Clicked Sports News", Toast.LENGTH_SHORT).show();
+                Fragment fragment = new SportsFragment();
+                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(((ViewGroup)getView().getParent()).getId(), fragment);
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
+            }
+        });
+
         hotNews = root.findViewById(R.id.hotnews);
         imageView = root.findViewById(R.id.newsImage);
         imageView2 = root.findViewById(R.id.newsImage2);
@@ -127,8 +157,8 @@ public class HomeFragment extends Fragment {
         imageView4.setAnimation(animation2);
         imageView4.animate();
 
-        businessImg.setAnimation(animation);
-        businessImg.animate();
+        breakingImg.setAnimation(animation);
+        breakingImg.animate();
 
         sportsImg.setAnimation(animation);
         sportsImg.animate();

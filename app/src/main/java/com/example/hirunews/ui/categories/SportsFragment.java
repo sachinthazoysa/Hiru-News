@@ -26,6 +26,9 @@ public class SportsFragment extends Fragment {
     TextView title;
     Intent intent;
 
+    public SportsFragment() {
+    }
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {

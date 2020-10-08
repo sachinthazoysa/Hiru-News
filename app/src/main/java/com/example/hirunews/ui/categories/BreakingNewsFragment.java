@@ -24,6 +24,9 @@ public class BreakingNewsFragment extends Fragment {
     Intent intent;
     TextView title;
 
+    public BreakingNewsFragment() {
+    }
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
