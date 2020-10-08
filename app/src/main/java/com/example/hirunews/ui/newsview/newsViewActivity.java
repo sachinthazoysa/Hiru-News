@@ -104,7 +104,7 @@ public class newsViewActivity extends AppCompatActivity {
                 title.setText(titlex);
             }
             if(imageName.equals("police")){
-                newsImage.setImageResource(R.drawable.police);
+                newsImage.setImageResource(R.mipmap.police);
                 title.setText(titlex);
             }
             if(imageName.equals("sha")){
