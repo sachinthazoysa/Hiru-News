@@ -13,7 +13,7 @@
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/app_bar"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="600dp"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         android:fitsSystemWindows="true"
         >
@@ -34,6 +34,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/colorPrimaryDark"/>
+
+            
 
             <TextView
                 android:id="@+id/my_news_title"
