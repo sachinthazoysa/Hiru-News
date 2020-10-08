@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -20,7 +21,8 @@ import com.example.hirunews.ui.newsview.newsViewActivity;
 
 public class MyNewsFragment extends Fragment {
     LinearLayout my_news_1, my_news_2, my_news_3;
-    TextView submit_news_btn;
+//    TextView submit_news_btn;
+    LinearLayout submit_news_btn;
     Intent intent;
 
 
