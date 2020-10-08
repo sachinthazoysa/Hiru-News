@@ -1,13 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".ui.categories.VideoNewsFragment">
+    tools:context=".ui.categories.VideoNewsFragment"
+    android:background="@android:color/white">
 
-    <ImageView
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/bangers"
+        android:text="Other News"
+        android:textColor="@android:color/black"
+        android:textSize="30dp">
+
+    </TextView>
+
+    <ScrollView
+        android:layout_below="@+id/text"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/colorAccent"/>
+        android:layout_marginTop="00dp"
+        android:background="#ffff"
+        android:clipToPadding="false">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ciaNews"
+            android:layout_marginTop="30dp"
+            android:layout_width="350dp"
+            android:layout_height="250dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/cia"
+            />
+        <ImageView
+            android:layout_below="@id/ciaNews"
+            android:id="@+id/businessNews"
+            android:layout_marginTop="30dp"
+            android:layout_width="350dp"
+            android:layout_height="250dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/bus"/>
+        <ImageView
+            android:layout_below="@+id/businessNews"
+            android:id="@+id/politicalNews"
+            android:layout_marginTop="30dp"
+            android:layout_width="350dp"
+            android:layout_height="250dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/pol"/>
+        <ImageView
+            android:layout_below="@+id/politicalNews"
+            android:id="@+id/entertainmentNews"
+            android:layout_marginTop="30dp"
+            android:layout_width="350dp"
+            android:layout_height="250dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ent"
+            android:layout_marginBottom="50dp"/>
+
+
+    </RelativeLayout>
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

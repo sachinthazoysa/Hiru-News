@@ -88,7 +88,7 @@ public class newsViewActivity extends AppCompatActivity {
             }
 
 
-        }else{ //for zoysa you have to add your condion here
+        }else if (page.equals( "hotNews" )){//zoysa condtion eka damma adow
 
             if(imageName.equals("brandix")){
                 newsImage.setImageResource(R.drawable.brandix);

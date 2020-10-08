@@ -37,6 +37,7 @@ public class HotNewsFragment extends Fragment {
             public void onClick(View v) {
                 intent.putExtra("imageName", "brandix" );
                 intent.putExtra("title","COVID-19: Minuwangoda cluster tops 1,000 mark with 190 more cases");
+                intent.putExtra("page","hotNews");
                 startActivity(intent);
             }
         });
@@ -48,6 +49,7 @@ public class HotNewsFragment extends Fragment {
                 Toast.makeText(getActivity(), "Hot News 2", Toast.LENGTH_SHORT).show();
                 intent.putExtra("imageName", "stds" );
                 intent.putExtra("title","Grade 05 Scholarship and A/L exams NOT postponed");
+                intent.putExtra("page","hotNews");
                 startActivity(intent);
             }
         });
@@ -59,6 +61,7 @@ public class HotNewsFragment extends Fragment {
                 Toast.makeText(getActivity(), "Hot News 3", Toast.LENGTH_SHORT).show();
                 intent.putExtra("imageName", "police" );
                 intent.putExtra("title","Quarantine curfew in Seeduwa police area");
+                intent.putExtra("page","hotNews");
                 startActivity(intent);
 
             }
@@ -71,6 +74,7 @@ public class HotNewsFragment extends Fragment {
                 Toast.makeText(getActivity(), "Hot News 4", Toast.LENGTH_SHORT).show();
                 intent.putExtra("imageName", "sha" );
                 intent.putExtra("title","Army Chief explains reason behind police curfews");
+                intent.putExtra("page","hotNews");
                 startActivity(intent);
             }
         });

@@ -42,7 +42,7 @@
 <!--                />-->
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="700dp"
+                android:layout_height="580dp"
                 android:background="@color/colorPrimaryDark" />
 
             <TextView
@@ -110,7 +110,7 @@
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="00dp"
         android:background="#D0D3D4"
         android:clipToPadding="false"
         app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
