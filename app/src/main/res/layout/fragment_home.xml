@@ -84,27 +84,99 @@
                 android:textColor="@android:color/black"
                 android:textSize="20sp" />
 
-            <ImageView
-                android:id="@+id/businessimage"
-                android:layout_width="280dp"
-                android:layout_height="120dp"
-                android:layout_below="@+id/recommendation"
-                android:layout_marginTop="10dp"
-                android:src="@drawable/business" />
+<!--            <ImageView-->
+<!--                android:id="@+id/businessimage"-->
+<!--                android:layout_width="280dp"-->
+<!--                android:layout_height="120dp"-->
+<!--                android:layout_below="@+id/recommendation"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:src="@drawable/business" />-->
 
-            <ImageView
-                android:id="@+id/sportsimage"
-                android:layout_width="280dp"
-                android:layout_height="120dp"
-                android:layout_below="@+id/businessimage"
-                android:layout_marginTop="10dp"
-                android:src="@drawable/sports"></ImageView>
+<!--            <ImageView-->
+<!--                android:id="@+id/sportsimage"-->
+<!--                android:layout_width="280dp"-->
+<!--                android:layout_height="120dp"-->
+<!--                android:layout_below="@+id/businessimage"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:src="@drawable/sports"></ImageView>-->
+
+            <LinearLayout
+                android:id="@+id/linear"
+                android:layout_below="@id/recommendation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/businessimage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:background="@drawable/recommendation_1"
+                        android:scaleType="fitXY" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="20dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Business News"
+                            android:textColor="@android:color/black"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="7 new news today"
+                            android:textColor="@android:color/black"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/sportsimage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:background="@drawable/recommendation_2"
+                        android:scaleType="fitXY" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="20dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sports News"
+                            android:textColor="@android:color/black"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="5 new news today"
+                            android:textColor="@android:color/black"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
 
             <TextView
                 android:id="@+id/currencyhead"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/sportsimage"
+                android:layout_below="@+id/linear"
                 android:layout_marginTop="20dp"
                 android:text="Currency"
                 android:textColor="@android:color/black"
