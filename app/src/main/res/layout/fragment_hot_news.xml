@@ -30,16 +30,6 @@
             app:expandedTitleMarginEnd="64dp">
 
 
-<!--            <ImageView-->
-<!--                android:id="@+id/image_1"-->
-<!--                app:layout_collapseMode="parallax"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_gravity="center"-->
-<!--                android:scaleType="centerCrop"-->
-<!--                android:src="@color/colorPrimary"-->
-<!--                android:textColor="@android:color/black"-->
-<!--                />-->
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="600dp"
@@ -141,7 +131,8 @@
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:layout_margin="10dp"
-                        android:src="@drawable/brandix" />
+                        android:src="@drawable/brandix"
+                        android:scaleType="centerCrop"/>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -175,20 +166,7 @@
                                 android:background="@drawable/ic_bookmark" />
 
                         </LinearLayout>
-                        <!--                        <ImageView-->
-                        <!--                            android:layout_width="20dp"-->
-                        <!--                            android:layout_height="20dp"-->
-                        <!--                            android:background="@color/colorPrimary"-->
-                        <!--                            android:layout_marginLeft="230dp"-->
-                        <!--                            android:layout_marginRight="50dp"-->
-                        <!--                            />-->
-
-                        <!--                        <TextView-->
-                        <!--                            android:layout_width="wrap_content"-->
-                        <!--                            android:layout_height="wrap_content"-->
-                        <!--                            android:text="#HotNews #LocalNews"-->
-                        <!--                            android:textColor="@android:color/holo_red_light"-->
-                        <!--                            android:layout_marginLeft="10dp"/>-->
+                         <!--                            android:layout_marginLeft="10dp"/>-->
                     </LinearLayout>
                 </LinearLayout>
 
@@ -204,7 +182,8 @@
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:layout_margin="10dp"
-                        android:background="@drawable/stds" />
+                        android:background="@drawable/stds"
+                        android:scaleType="centerCrop"/>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -253,7 +232,8 @@
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:layout_margin="10dp"
-                        android:background="@drawable/police" />
+                        android:background="@mipmap/police"
+                        android:scaleType="centerCrop"/>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -302,7 +282,8 @@
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:layout_margin="10dp"
-                        android:background="@drawable/sha" />
+                        android:background="@drawable/sha"
+                        android:scaleType="centerCrop"/>
 
                     <LinearLayout
                         android:layout_width="match_parent"

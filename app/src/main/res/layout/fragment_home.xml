@@ -55,7 +55,7 @@
                             android:id="@+id/newsImage2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/g2"/>
+                            android:src="@drawable/g2"></ImageView>
                         <ImageView
                             android:id="@+id/newsImage3"
                             android:layout_width="wrap_content"
@@ -168,7 +168,7 @@
 
             <TextView
                 android:layout_below="@+id/currencylayout"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:id="@+id/todaynewshead"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -181,19 +181,19 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/todaynewshead"
                 android:id="@+id/img1"
-                android:src="@drawable/port"/>
+                android:src="@drawable/covidnews"/>
             <ImageView
                 android:layout_width="380dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/img1"
                 android:id="@+id/img2"
-                android:src="@drawable/covid"/>
+                android:src="@drawable/covidnews"/>
             <ImageView
                 android:layout_width="380dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/img2"
                 android:id="@+id/img3"
-                android:src="@drawable/sinharaja"
+                android:src="@drawable/covidnews"
                 android:layout_marginBottom="40dp"/>
 
             <TextView

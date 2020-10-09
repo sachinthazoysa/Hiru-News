@@ -104,16 +104,60 @@ public class newsViewActivity extends AppCompatActivity {
                 title.setText(titlex);
             }
             if(imageName.equals("police")){
-                newsImage.setImageResource(R.drawable.police);
+                newsImage.setImageResource(R.mipmap.police);
                 title.setText(titlex);
             }
             if(imageName.equals("sha")){
                 newsImage.setImageResource(R.drawable.sha);
                 title.setText(titlex);
             }
+        }else if (page.equals( "localNews" )){
+
+            if(imageName.equals("quarantine")){
+                newsImage.setImageResource(R.drawable.local1);
+                title.setText(titlex);
+            }
+//
+            if(imageName.equals("train")){
+                newsImage.setImageResource(R.drawable.local2);
+                title.setText(titlex);
+            }
+            if(imageName.equals("posting")){
+                newsImage.setImageResource(R.drawable.local3);
+                title.setText(titlex);
+            }
+            if(imageName.equals("race")){
+                newsImage.setImageResource(R.drawable.local4);
+                title.setText(titlex);
+            }
+            if(imageName.equals("purchase")){
+                newsImage.setImageResource(R.drawable.local5);
+                title.setText(titlex);
+            }
+        }else if (page.equals( "sportNews" )){
+
+            if(imageName.equals("Premier")){
+                newsImage.setImageResource(R.drawable.lpl);
+                title.setText(titlex);
+            }
+//
+            if(imageName.equals("tour")){
+                newsImage.setImageResource(R.drawable.ban);
+                title.setText(titlex);
+            }
+            if(imageName.equals("record")){
+                newsImage.setImageResource(R.drawable.rcb);
+                title.setText(titlex);
+            }
+            if(imageName.equals("employees")){
+                newsImage.setImageResource(R.drawable.icc);
+                title.setText(titlex);
+            }
+            if(imageName.equals("sprinter")){
+                newsImage.setImageResource(R.drawable.yup);
+                title.setText(titlex);
+            }
         }
-
-
 
 
         playButton.setOnClickListener(new View.OnClickListener() {

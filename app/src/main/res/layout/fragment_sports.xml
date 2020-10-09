@@ -41,7 +41,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:fontFamily="@font/bangers"
+                android:fontFamily="@font/fugaz_one"
                 android:text="Sports    \n        News"
                 android:textSize="50sp"
                 android:layout_gravity="center"
@@ -82,7 +82,8 @@
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:src="@drawable/lpl"
-                        android:layout_margin="10dp" />
+                        android:layout_margin="10dp"
+                        android:scaleType="centerCrop"/>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -131,7 +132,8 @@
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:src="@drawable/ban"
-                        android:layout_margin="10dp"/>
+                        android:layout_margin="10dp"
+                        android:scaleType="centerCrop"/>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -181,7 +183,8 @@
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:src="@drawable/rcb"
-                        android:layout_margin="10dp"/>
+                        android:layout_margin="10dp"
+                        android:scaleType="centerCrop"/>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -231,7 +234,8 @@
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:src="@drawable/icc"
-                        android:layout_margin="10dp"/>
+                        android:layout_margin="10dp"
+                        android:scaleType="centerCrop"/>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -281,7 +285,8 @@
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:src="@drawable/yup"
-                        android:layout_margin="10dp"/>
+                        android:layout_margin="10dp"
+                        android:scaleType="centerCrop"/>
 
                     <LinearLayout
                         android:layout_width="match_parent"
