@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.hirunews.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_HomeFragment_to_HomeSecondFragment"
+            app:destination="@id/nav_home_second" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_home_second"
+        android:name="com.example.hirunews.ui.home.HomeSecondFragment"
+        android:label="@string/home_second"
+        tools:layout="@layout/fragment_home_second">
+        <action
+            android:id="@+id/action_HomeSecondFragment_to_HomeFragment"
+            app:destination="@id/nav_home" />
+
+        <argument
+            android:name="myArg"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.hirunews.ui.submitnews.SubmitNewsFragment"
+        android:label="@string/menu_hot_news"
+        tools:layout="@layout/fragment_submit_news" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.hirunews.ui.savednews.SavedNewsFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_saved_news" />
+    <fragment
+        android:id="@+id/nav_local"
+        android:name="com.example.hirunews.ui.categories.LocalFragment"
+        android:label="fragment_local"
+        tools:layout="@layout/fragment_local" />
+    <fragment
+        android:id="@+id/nav_foreign"
+        android:name="com.example.hirunews.ui.categories.ForeignFragment"
+        android:label="fragment_foreign"
+        tools:layout="@layout/fragment_foreign" />
+    <fragment
+        android:id="@+id/nav_sports"
+        android:name="com.example.hirunews.ui.categories.SportsFragment"
+        android:label="fragment_sports"
+        tools:layout="@layout/fragment_sports" />
+    <fragment
+        android:id="@+id/nav_breaking"
+        android:name="com.example.hirunews.ui.categories.BreakingNewsFragment"
+        android:label="fragment_breaking_news"
+        tools:layout="@layout/fragment_breaking_news" />
+    <fragment
+        android:id="@+id/nav_video_news"
+        android:name="com.example.hirunews.ui.categories.VideoNewsFragment"
+        android:label="fragment_video_news"
+        tools:layout="@layout/fragment_video_news" />
+    <fragment
+        android:id="@+id/nav_hot"
+        android:name="com.example.hirunews.ui.categories.HotNewsFragment"
+        android:label="@string/menu_hot_news"
+        tools:layout="@layout/fragment_hot_news" />
+    <fragment
+        android:id="@+id/myNewsFragment"
+        android:name="com.example.hirunews.ui.categories.MyNewsFragment"
+        android:label="fragment_my_news"
+        tools:layout="@layout/fragment_my_news" />
+</navigation>
