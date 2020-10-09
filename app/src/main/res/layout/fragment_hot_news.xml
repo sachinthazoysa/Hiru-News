@@ -159,11 +159,17 @@
                                 android:textColor="@android:color/holo_red_light" />
 
                             <ImageView
+                                android:id="@+id/sbtn"
                                 android:layout_width="20dp"
                                 android:layout_height="20dp"
                                 android:layout_marginLeft="70dp"
-                                android:layout_marginRight="80dp"
                                 android:background="@drawable/ic_bookmark" />
+
+                            <ImageView
+                                android:id="@+id/gbtn"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:background="@drawable/gbm" />
 
                         </LinearLayout>
                          <!--                            android:layout_marginLeft="10dp"/>-->

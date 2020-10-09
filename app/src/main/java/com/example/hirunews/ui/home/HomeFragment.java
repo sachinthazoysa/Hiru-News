@@ -83,13 +83,13 @@ public class HomeFragment extends Fragment {
         cur1 = root.findViewById(R.id.cur1);
         cur2 = root.findViewById(R.id.cur2);
         cur3 = root.findViewById(R.id.cur3);
-//        cur4 = root.findViewById(R.id.cur4);
+        cur4 = root.findViewById(R.id.cur4);
         cur5 = root.findViewById(R.id.cur5);
 
         cur1.startAnimation(repeatanimation);
         cur2.startAnimation(repeatanimation);
         cur3.startAnimation(repeatanimation);
-//        cur4.startAnimation(repeatanimation);
+        cur4.startAnimation(repeatanimation);
         cur5.startAnimation(repeatanimation);
 
         today_news_1 = root.findViewById( R.id.today_news_1 );

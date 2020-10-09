@@ -108,7 +108,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="#HotNews #LocalNews"
+                                android:text="#LocalNews"
                                 android:textColor="@android:color/holo_red_light"
                                 android:layout_marginLeft="10dp"/>
 
@@ -159,7 +159,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="#HotNews #LocalNews"
+                                android:text="#LocalNews"
                                 android:textColor="@android:color/holo_red_light"
                                 android:layout_marginLeft="10dp"/>
 
@@ -209,7 +209,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="#HotNews #LocalNews"
+                                android:text="#LocalNews"
                                 android:textColor="@android:color/holo_red_light"
                                 android:layout_marginLeft="10dp"/>
 
@@ -259,7 +259,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="#HotNews #LocalNews"
+                                android:text="#LocalNews"
                                 android:textColor="@android:color/holo_red_light"
                                 android:layout_marginLeft="10dp"/>
 

@@ -241,6 +241,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginRight="5dp"
                             android:src="@drawable/cur6" />
+
                     </LinearLayout>
                 </HorizontalScrollView>
             </LinearLayout>
