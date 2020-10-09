@@ -83,28 +83,28 @@ public class HomeFragment extends Fragment {
         cur1 = root.findViewById(R.id.cur1);
         cur2 = root.findViewById(R.id.cur2);
         cur3 = root.findViewById(R.id.cur3);
-        cur4 = root.findViewById(R.id.cur4);
+//        cur4 = root.findViewById(R.id.cur4);
         cur5 = root.findViewById(R.id.cur5);
 
         cur1.startAnimation(repeatanimation);
         cur2.startAnimation(repeatanimation);
         cur3.startAnimation(repeatanimation);
-        cur4.startAnimation(repeatanimation);
+//        cur4.startAnimation(repeatanimation);
         cur5.startAnimation(repeatanimation);
 
         today_news_1 = root.findViewById( R.id.today_news_1 );
         today_news_2 = root.findViewById( R.id.today_news_2 );
         today_news_3 = root.findViewById( R.id.today_news_3 );
-        today_news_4 = root.findViewById( R.id.today_news_4 );
+//        today_news_4 = root.findViewById( R.id.today_news_4 );
 
 
         today_news_1.setOnClickListener( new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getActivity(), "Today News 1", Toast.LENGTH_SHORT).show();
-                intent1.putExtra("page", "breakingNews" );
-                intent1.putExtra("imageName", "accident" );
-                intent1.putExtra("title","5 accidents around Sri Lanka in past 24 Hours");
+                intent1.putExtra("page", "localNews" );
+                intent1.putExtra("imageName", "quarantine" );
+                intent1.putExtra("title","‘If you fail to move to quarantine, your property will be confiscated’ – DIG Ajith Rohana");
                 startActivity(intent1);
             }
         } );
@@ -113,9 +113,9 @@ public class HomeFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getActivity(), "Today News 2", Toast.LENGTH_SHORT).show();
-                intent1.putExtra("page", "breakingNews" );
-                intent1.putExtra("imageName", "opposition" );
-                intent1.putExtra("title","Opposition seeks two-day debate on COVID-19");
+                intent1.putExtra("page", "localNews" );
+                intent1.putExtra("imageName", "train" );
+                intent1.putExtra("title","Train operations to areas under quarantine curfew, suspended");
                 startActivity(intent1);
             }
         } );
@@ -125,24 +125,24 @@ public class HomeFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getActivity(), "Today News 3", Toast.LENGTH_SHORT).show();
-                intent1.putExtra("page", "breakingNews" );
-                intent1.putExtra("imageName", "brandix" );
-                intent1.putExtra("title","Brandix says no party from India or any other country had access to Minuwangoda facility");
+                intent1.putExtra("page", "localNews" );
+                intent1.putExtra("imageName", "posting" );
+                intent1.putExtra("title","18 year old arrested for posting false information on curfew");
                 startActivity(intent1);
             }
         } );
 
 
-        today_news_4.setOnClickListener( new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(getActivity(), "Today News 4", Toast.LENGTH_SHORT).show();
-                intent1.putExtra("page", "breakingNews" );
-                intent1.putExtra("imageName", "police" );
-                intent1.putExtra("title","UPDATE: Another Quarantine order issued for all Minuwangoda Brandix workers");
-                startActivity(intent1);
-            }
-        } );
+//        today_news_4.setOnClickListener( new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Toast.makeText(getActivity(), "Today News 4", Toast.LENGTH_SHORT).show();
+//                intent1.putExtra("page", "breakingNews" );
+//                intent1.putExtra("imageName", "police" );
+//                intent1.putExtra("title","UPDATE: Another Quarantine order issued for all Minuwangoda Brandix workers");
+//                startActivity(intent1);
+//            }
+//        } );
 
         imageView.setAnimation(animation2);
         imageView.animate();
