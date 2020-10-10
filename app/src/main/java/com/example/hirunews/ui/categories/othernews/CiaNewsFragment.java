@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.LinearLayout;
 
 import androidx.annotation.NonNull;
@@ -25,6 +27,7 @@ public class CiaNewsFragment extends Fragment {
         intent = new Intent(getActivity(), newsViewActivity.class);
 
         View root = inflater.inflate(R.layout.fragment_cia_news, container, false);
+        Animation animation = AnimationUtils.loadAnimation(getActivity().getApplicationContext(), R.anim.top_animation_2);
 
         cia_news_5 = root.findViewById(R.id.cia_news_5);
         cia_news_5.setOnClickListener(new View.OnClickListener() {
@@ -100,6 +103,32 @@ public class CiaNewsFragment extends Fragment {
                 startActivity(intent);
             }
         });
+
+
+        cia_news_5.setAnimation(animation);
+        cia_news_5.animate();
+        animation.start();
+
+        cia_news_6.setAnimation(animation);
+        cia_news_6.animate();
+        animation.start();
+
+        cia_news_7.setAnimation(animation);
+        cia_news_7.animate();
+        animation.start();
+
+        cia_news_8.setAnimation(animation);
+        cia_news_8.animate();
+        animation.start();
+
+        cia_news_9.setAnimation(animation);
+        cia_news_9.animate();
+        animation.start();
+
+
+        cia_news_10.setAnimation(animation);
+        cia_news_10.animate();
+        animation.start();
 
         return root;
     }

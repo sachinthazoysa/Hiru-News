@@ -160,6 +160,17 @@ public class newsViewActivity extends AppCompatActivity {
         }else if(page.equals("CIA")){
             newsImage.setImageResource(R.drawable.cia);
             title.setText(titlex);
+        }else if(page.equals("Biz")){
+            if(imageName.equals("nobel")){
+                newsImage.setImageResource(R.drawable.nobel);
+            }
+            if(imageName.equals("toyota")){
+                newsImage.setImageResource(R.drawable.toyota);
+            }
+            if(imageName.equals("brandix")){
+                newsImage.setImageResource(R.drawable.brandix);
+            }
+            title.setText(titlex);
         }
 
 
