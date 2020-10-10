@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -18,6 +19,7 @@ import androidx.fragment.app.Fragment;
 
 import com.example.hirunews.MainActivity;
 import com.example.hirunews.R;
+import com.example.hirunews.ui.categories.data.DataPassing;
 import com.example.hirunews.ui.newsview.newsViewActivity;
 import com.google.firebase.auth.internal.FederatedSignInActivity;
 
@@ -26,6 +28,9 @@ public class HotNewsFragment extends Fragment {
         LinearLayout hot_news_1, hot_news_2, hot_news_3, hot_news_4, hot_news_5;
         Intent intent;
         TextView title;
+        ImageView savedBtn, unSavedBtn;
+        int checker = 0;
+        DataPassing dataPassing = new DataPassing();
 
     @Nullable
     @Override
@@ -38,7 +43,19 @@ public class HotNewsFragment extends Fragment {
 
         title=root.findViewById(R.id.hot_news_title);
         title.startAnimation(animation);
+        savedBtn = root.findViewById(R.id.gbtn);
+        unSavedBtn=root.findViewById(R.id.sbtn);
 
+//        savedBtn.setVisibility(View.INVISIBLE);
+
+
+        if(dataPassing.getSaveStatus() == 0){
+            savedBtn.setVisibility(View.INVISIBLE);
+            unSavedBtn.setVisibility(View.VISIBLE);
+        }else if (dataPassing.getSaveStatus() == 1){
+            savedBtn.setVisibility(View.VISIBLE);
+            unSavedBtn.setVisibility(View.INVISIBLE);
+        }
 
         hot_news_1 = root.findViewById(R.id.hot_news_1);
         hot_news_1.setAnimation(moveLeftAnim);
@@ -91,8 +108,28 @@ public class HotNewsFragment extends Fragment {
             }
         });
 
+        unSavedBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if(dataPassing.getSaveStatus() == 0){
+                    savedBtn.setVisibility(View.INVISIBLE);
+                    unSavedBtn.setVisibility(View.VISIBLE);
+                    dataPassing.setSaveStatus(1);
+
+                }else if (dataPassing.getSaveStatus() == 1){
+                    savedBtn.setVisibility(View.VISIBLE);
+                    unSavedBtn.setVisibility(View.INVISIBLE);
+                    dataPassing.setSaveStatus(0);
+                }
+
+                int s= 1;
+                dataPassing.setSaveStatus(s);
+            }
+        });
 
 
         return root;
     }
+
 }
