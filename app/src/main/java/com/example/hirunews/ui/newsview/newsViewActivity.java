@@ -157,6 +157,9 @@ public class newsViewActivity extends AppCompatActivity {
                 newsImage.setImageResource(R.drawable.yup);
                 title.setText(titlex);
             }
+        }else if(page.equals("CIA")){
+            newsImage.setImageResource(R.drawable.cia);
+            title.setText(titlex);
         }
 
 
