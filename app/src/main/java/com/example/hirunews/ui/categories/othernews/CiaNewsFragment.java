@@ -1,9 +1,12 @@
 package com.example.hirunews.ui.categories.othernews;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.LinearLayout;
 
 import androidx.annotation.NonNull;
@@ -11,55 +14,29 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.example.hirunews.R;
+import com.example.hirunews.ui.newsview.newsViewActivity;
 
 public class CiaNewsFragment extends Fragment {
 
-    LinearLayout cia_news_1, cia_news_2, cia_news_3, cia_news_4, cia_news_5, cia_news_6, cia_news_7;
-
+    LinearLayout cia_news_1, cia_news_10, cia_news_9, cia_news_8, cia_news_5, cia_news_6, cia_news_7;
+    Intent intent;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 //        return super.onCreateView(inflater, container, savedInstanceState);
+        intent = new Intent(getActivity(), newsViewActivity.class);
 
         View root = inflater.inflate(R.layout.fragment_cia_news, container, false);
-
-        cia_news_1 = root.findViewById(R.id.cia_news_1);
-        cia_news_1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
-
-        cia_news_2 = root.findViewById(R.id.cia_news_2);
-        cia_news_2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
-
-        cia_news_3 = root.findViewById(R.id.cia_news_3);
-        cia_news_3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
-
-        cia_news_4 = root.findViewById(R.id.cia_news_4);
-        cia_news_4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
+        Animation animation = AnimationUtils.loadAnimation(getActivity().getApplicationContext(), R.anim.top_animation_2);
 
         cia_news_5 = root.findViewById(R.id.cia_news_5);
         cia_news_5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                intent.putExtra("page", "CIA" );
+                intent.putExtra("imageName", "cia" );
+                intent.putExtra("title","HIRU CIA | 2020/10/10");
+                startActivity(intent);
             }
         });
 
@@ -67,7 +44,11 @@ public class CiaNewsFragment extends Fragment {
         cia_news_6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                intent.putExtra("page", "CIA" );
+                intent.putExtra("imageName", "cia" );
 
+                intent.putExtra("title","HIRU CIA | 2020/10/9");
+                startActivity(intent);
             }
         });
 
@@ -75,11 +56,81 @@ public class CiaNewsFragment extends Fragment {
         cia_news_7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                intent.putExtra("page", "CIA" );
+                intent.putExtra("imageName", "cia" );
 
+                intent.putExtra("title","HIRU CIA | 2020/10/8");
+                startActivity(intent);
+            }
+        });
+
+        cia_news_8 = root.findViewById(R.id.cia_news_8);
+        cia_news_8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                intent.putExtra("page", "CIA" );
+                intent.putExtra("imageName", "cia" );
+
+                intent.putExtra("title","HIRU CIA | 2020/10/7");
+                startActivity(intent);
             }
         });
 
 
+
+        cia_news_9 = root.findViewById(R.id.cia_news_9);
+        cia_news_9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                intent.putExtra("page", "CIA" );
+                intent.putExtra("imageName", "cia" );
+
+                intent.putExtra("title","HIRU CIA | 2020/10/6");
+                startActivity(intent);
+            }
+        });
+
+
+
+        cia_news_10 = root.findViewById(R.id.cia_news_10);
+        cia_news_10.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                intent.putExtra("page", "CIA" );
+                intent.putExtra("imageName", "cia" );
+
+                intent.putExtra("title","HIRU CIA | 2020/10/5");
+                startActivity(intent);
+            }
+        });
+
+
+        cia_news_5.setAnimation(animation);
+        cia_news_5.animate();
+        animation.start();
+
+        cia_news_6.setAnimation(animation);
+        cia_news_6.animate();
+        animation.start();
+
+        cia_news_7.setAnimation(animation);
+        cia_news_7.animate();
+        animation.start();
+
+        cia_news_8.setAnimation(animation);
+        cia_news_8.animate();
+        animation.start();
+
+        cia_news_9.setAnimation(animation);
+        cia_news_9.animate();
+        animation.start();
+
+
+        cia_news_10.setAnimation(animation);
+        cia_news_10.animate();
+        animation.start();
+
         return root;
     }
+
 }

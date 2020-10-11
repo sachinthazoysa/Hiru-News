@@ -4,7 +4,10 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -22,6 +25,7 @@ import com.example.hirunews.ui.categories.othernews.PoliticalNewsFragment;
 public class VideoNewsFragment extends Fragment {
 
     ImageView ciaNews, businessNews, politicalNews, entertainmentNews;
+    TextView textView;
 
     @Nullable
     @Override
@@ -29,7 +33,12 @@ public class VideoNewsFragment extends Fragment {
 //        return super.onCreateView(inflater, container, savedInstanceState);
 
         View root = inflater.inflate(R.layout.fragment_video_news, container, false);
+        Animation animation = AnimationUtils.loadAnimation(getActivity().getApplicationContext(), R.anim.top_animation_2);
+        Animation animation2 = AnimationUtils.loadAnimation(getActivity().getApplicationContext(), R.anim.animation_fall_down);
+        Animation animation3 = AnimationUtils.loadAnimation(getActivity().getApplicationContext(), R.anim.move_left_animation);
 
+
+        textView =root.findViewById(R.id.text);
         ciaNews = root.findViewById(R.id.ciaNews);
         ciaNews.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -86,6 +95,9 @@ public class VideoNewsFragment extends Fragment {
             }
         });
 
+        ciaNews.setAnimation(animation2);
+        businessNews.setAnimation(animation2);
+        textView.setAnimation(animation3);
         return root;
     }
 }
