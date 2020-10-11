@@ -174,6 +174,10 @@ public class newsViewActivity extends AppCompatActivity {
         }
 
 
+        playButton.setImageResource(R.drawable.play_ic);
+        playButton.setVisibility(View.VISIBLE);
+
+
         playButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
