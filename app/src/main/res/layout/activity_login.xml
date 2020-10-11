@@ -7,6 +7,15 @@
     tools:context=".LoginActivity"
     android:background="@android:color/white">
 
+
+
+    <ImageView
+        android:layout_marginTop="600dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/unnamed"/>
+
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -18,7 +27,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="230dp"
         android:layout_marginLeft="80dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
 
 <!--        <com.google.android.material.textview.MaterialTextView-->
 <!--            android:layout_width="wrap_content"-->
